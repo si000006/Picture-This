@@ -15,36 +15,52 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
     <picture>
-      <source
-        media="(min-width: 960px)"
-        srcset="
-          images/square-480.png 480w,
-          images/square-640.png 640w,
-          images/square-800.png 800w,
-          images/square-960.png 960w,
-          images/square-1280.png 1280w,
-          images/square-1440.png 1440w,
-          images/square-1600.png 1600w,
-          images/square-1920.png 1920w,
-          images/square-2400.png 2400w
-        "
-        sizes="(min-width: 1600px) 800px, (min-width: 1280px) 640px, 480px"
-      />
-      <img
-        src="images/landscape-960.png"
-        srcset="
-          images/landscape-320.png 320w,
-          images/landscape-480.png 480w,
-          images/landscape-720.png 720w,
-          images/landscape-960.png 960w,
-          images/landscape-1440.png 1440w,
-          images/landscape-1920.png 1920w,
-          images/landscape-2160.png 2160w,
-          images/landscape-2880.png 2880w
-        "
-        sizes="(max-width: 720px) 100vw, 960px"
-        alt="Inside of an art gallery"
-      />
+
+      <source srcset="
+          images/square-800.png,
+          images/square-1600.png 2x,
+          images/square-2400.png 3x"
+          media="(min-width:1280px)">
+
+          <source srcset="
+          images/square-640.png,
+          images/square-1280.png 2x,
+          images/square-1920.png 3x"
+          media="(min-width:960px)">
+
+      <source srcset="
+          images/square-480.png,
+          images/square-960.png 2x,
+          images/square-1440.png"
+          media="(min-width:960px)">
+
+          <source srcset="
+          images/landscape-960.png,
+          images/landscape-1920.png 2x,
+          images/landscape-2880.png 3x"
+          media="(min-width:720px)"
+        >
+        <source srcset="
+          images/landscape-720.png,
+          images/landscape-1440.png 2x,
+          images/landscape-2160.png 3x"
+          media="(min-width:480px)">
+  
+        <source srcset="
+          images/landscape-480.png,
+          images/landscape-960.png 2x,
+          images/landscape-1440.png 3x"
+          media="(min-width:320px)">
+  
+        <source srcset="
+            images/landscape-320.png,
+            images/landscape-640.png 2x,
+            images/landscape-960.png 3x"
+            media="(max-width: 319px)">
+
+          <img class="museum"
+          src="images/museum.jpg"
+          alt="inside of a museum">
     </picture>
   </header>
 </body>
